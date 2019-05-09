@@ -22,5 +22,21 @@ namespace Examen {
         public Cliente() {
 
         }
-    }
+
+		public static void SumaSaldo(double s)
+		{
+			saldo += s;
+		}
+
+		public static void RestaSaldo(double s)
+		{
+			saldo -= s;
+		}
+
+		public static string PositivoNegativo(double s)
+		{
+			if (s >= 0) return "Positivo";
+			else return "Negativo";
+		}
+	}
 }
